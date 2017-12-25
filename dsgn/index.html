@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>DSGN</title>
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<!-- Our Custom CSS -->
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="wrapper">
+  <div id="sidebar">
+    <div class="sidebar-header">
+      <h3>DSGN</h3>
+    </div>
+    <ul class="components">
+      <li class="active"><a href="javascript:void(0)">Home</a></li>
+      <li><a href="javascript:void(0)">Projects</a></li>
+      <li><a href="javascript:void(0)">Studio</a></li>
+      <li><a href="javascript:void(0)">News</a></li>
+      <li><a href="javascript:void(0)">Contact</a></li>
+    </ul>
+  </div>
+  <div id="content">
+        <div class="col_custom_8">
+              <div class="logo_bg">
+              <img src="images/logo_bg.jpg" alt="logo_bg">
+              </div>
+              <div class="logo_box"> 
+              <a href="javascript:void(0)"><img class="logo" src="images/logo.png" alt="logo"></a> 
+              <div class="logo_content"><a href="javascript:void(0)">Associates</a></div>
+              <div class="logo_content"><a href="javascript:void(0)">Studio</a></div>
+              <div class="logo_content"><a href="javascript:void(0)">Design</a></div>
+              <ul class="social_icons">
+                  <li class="social"><a href="javascript:void(0)"><i class="fa fa-facebook"></i></a></li>
+                  <li class="social"><a href="javascript:void(0)"><i class="fa fa-twitter"></i></a></li>
+                  <li class="social"><a href="javascript:void(0)"><i class="fa fa-linkedin"></i></a></li>
+                  <li class="social"><a href="javascript:void(0)"><i class="fa fa-google-plus"></i></a></li>
+              </ul>    
+              </div>
+        </div>
+        <div class="col_custom_4">
+              <div class="menu_bg"> 
+              <img src="images/menu_bg.jpg" alt="menu_bg"> 
+              </div>
+              <div class="toggle_box">
+                <a href="javascript:void(0)" id="sidebarCollapse"> <i class="fa fa-bars"></i> </a>
+              </div>
+       </div>
+       
+       <div class="clear_both"></div>
+       
+       
+    <div class="col_custom_4">
+              <div class="menu_bg"> 
+              <img src="images/project_bg_1.jpg" alt="project_bg"> 
+              </div>
+              <div class="project_box1"> 
+                    <ul class="projects_name">
+                      <li class="active"><a href="javascript:void(0)">All</a></li>
+                      <li><a href="javascript:void(0)">House</a></li>
+                      <li><a href="javascript:void(0)">Commercial</a></li>
+                      <li><a href="javascript:void(0)">Studio lab</a></li>
+                    </ul>  
+					<div class="project_heading1"><a href="javascript:void(0)">PROJECTS</a></div> 
+              </div>
+			 
+       </div>
+       
+       <div class="project_custom_4">
+              <div class="menu_bg"> 
+              <img src="images/project_bg_2.jpg" alt="project_bg"> 
+              </div>
+              <div class="project_box2"> 
+			  <div class="project_heading2"><a href="javascript:void(0)">Founde</a></div>
+              <div class="logo_content"><a href="javascript:void(0)">Projects Assistants: <span>Francesco Dompieri</span> </a></div>
+              <div class="logo_content"><a href="javascript:void(0)">Material: <span>Glass and Metal</span> </a></div>
+              <div class="logo_content"><a href="javascript:void(0)">Typology: <span>Suspension Lamp</span> </a></div>
+			  <div class="logo_content"><a href="javascript:void(0)">Client: <span>David Design</span> </a></div>
+              <div class="logo_content"><a href="javascript:void(0)">Year: <span>2014</span> </a></div>  
+              <div class="view_project1"><a href="javascript:void(0)">View Project</a></div>
+              <div class="heart_symbol"><a href="javascript:void(0)"><i class="fa fa-heart-o"></i></a></div>
+              <div class="likes">+200</div>			  
+              </div>
+			  
+             
+       </div>
+       
+       <div class="col_custom_4">
+              <div class="menu_bg"> 
+              <img src="images/project_bg_3.jpg" alt="project_bg"> 
+              <img src="images/project_bg_4.jpg" alt="project_bg"> 
+              </div>
+              <div class="project_box3"> 
+              <div class="project_heading3"><a href="javascript:void(0)">Potter</a></div>
+              <div class="logo_content"><a href="javascript:void(0)">For <span>Stelton</span> </a></div>
+              <div class="potter_content"><span>Potter focuses on the functional-</br>ity and process of preparing tea.</br> a big sieve allows the flavor of to</br> evenly brewed. </span></div> 
+              <div class="view_project2"><a href="javascript:void(0)">View Project</a></div>
+              <div class="heart_symbol1"><a href="javascript:void(0)"><i class="fa fa-heart-o"></i></a></div>
+              <div class="likes1">+200</div>  
+              </div>
+              
+       </div>
+   </div>
+</div>
+
+<div class="overlay"></div>
+
+<!-- jQuery CDN --> 
+<script src="js/jquery-1.12.0.min.js"></script> 
+<script type="text/javascript">
+            $(document).ready(function () {
+               
+                $('#dismiss, .overlay').on('click', function () {
+                    $('#sidebar').removeClass('active');
+                    $('.overlay').fadeOut();
+                });
+
+                $('#sidebarCollapse').on('click', function () {
+                    $('#sidebar').addClass('active');
+                    $('.overlay').fadeIn();
+                    $('.collapse.in').toggleClass('in');
+                    $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+                });
+            });
+        </script>
+</body>
+</html>
